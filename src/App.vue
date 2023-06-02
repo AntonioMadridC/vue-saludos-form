@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <saludos-form></saludos-form>
+    <br class="m-5">
+    <edad-form></edad-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EdadForm from './components/EdadForm.vue'
+import SaludosForm from './components/SaludosForm.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SaludosForm,
+    EdadForm
   }
 }
 </script>
